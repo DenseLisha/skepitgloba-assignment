@@ -22,8 +22,8 @@ code {
   justify-content: center;
   align-items: center;
   background-image: url("../src/assests/Wallpaper.png");
-  background-size: 100% 100%; /* Ensure the background image covers the entire container */
-  background-position: center; /* Center the background image */
+  background-size: 100% 100%; 
+  background-position: center; 
   background-attachment: fixed; 
   height: 100vh; 
 }
@@ -103,7 +103,7 @@ code {
   top: 0;
   bottom: 0;
   background-color: yellow;
-  border-radius: 50% 50%  ;
+  border-radius: 50% 50% 50% 0px;
   padding: 30px;
   max-width: 140px;
   margin-bottom: 20px;
@@ -182,3 +182,127 @@ code {
 }
 
 /* Login */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./assests/Wallpaper.png"), url("./assests/Wallpaper.png");
+  background-size:  calc(50% - 5px) 100%, calc(50% - 5px) 100%;
+  
+  background-repeat: no-repeat; 
+  background-position:right, left ;
+  filter: blur(0.1x);
+  opacity: 0.8;
+  
+}
+
+
+/* .shadow {
+  position: fixed;
+  top: 70%; 
+  left: 60%; 
+  transform: translate(-70%, -70%);
+  width: 700px;
+  height: 500px; 
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+} */
+
+.top-image{
+  padding-top: 50px;
+}
+.login-box {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+ 
+}
+
+.login-box h3 {
+  margin-top: 0;
+  
+}
+
+.form-group {
+  margin-bottom: 15px;
+ 
+}
+.form-group input{
+  border-radius: 20px; 
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 150%;
+  box-sizing: border-box;
+  background-color: gray;
+  color: black;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.remember-me input {
+  margin-right: 5px;
+  border: 5px solid black;
+}
+.submit-button {
+  margin-top: 10px; 
+}
+
+.submit-button button {
+  border-radius: 20px; 
+  padding: 12px; 
+  width: 150%;
+  box-sizing: border-box;
+  background-color: black;
+  color: white; 
+  cursor: pointer; 
+}
+
+.left-image-container {
+  background-color: yellow;
+  border-radius: 70% 50% 70% 50% / 70% 50% 70% 50%;
+
+  display: inline-block; 
+  padding: 30px;
+}
+
+/* .parent-container {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+  
+}
+
+.bubble-container {
+  position: absolute; 
+  width: 100%;
+  max-width: 300px;
+  top: 65%; 
+  left: 0; 
+  transform: translate(10%, 70%);
+}
+
+.bubble {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  background-color: yellow;
+  border-radius: 50% 50%  ;
+  padding: 30px;
+  max-width: 140px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+} */
+
+.bubble p {
+  margin: 0; /* Remove default margin */
+}
