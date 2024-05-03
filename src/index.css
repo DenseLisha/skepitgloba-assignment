@@ -183,35 +183,63 @@ code {
 
 /* Login */
 .login-container {
-  display: flex;
-  align-items: center;
   justify-content: center;
+  top: 70%; 
+  left: 60%; 
   height: 100vh;
-  background-image: url("./assests/Wallpaper.png"), url("./assests/Wallpaper.png");
+  align-items: center;
+  align-self: center;
+  /* background-image: url("./assests/Wallpaper.png"), url("./assests/Wallpaper.png");
   background-size:  calc(50% - 5px) 100%, calc(50% - 5px) 100%;
   
   background-repeat: no-repeat; 
   background-position:right, left ;
   filter: blur(0.1x);
-  opacity: 0.8;
+  opacity: 0.8; */
   
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assests/Wallpaper.png'), url("./assests/Wallpaper.png");
+  background-size: calc(50% - 5px) 100%, calc(50% - 5px) 100%;
+  background-repeat: no-repeat;
+  background-position: right , left ;
+  filter: blur(5px);
+  z-index: -1;
+}
+.background-image:nth-child(1) {
+  background-size:  right; /* Double the width of the background image */
+}
+
+.background-image:nth-child(2) {
+  background-size: left; /* Double the width of the background image */
 }
 
 
-/* .shadow {
+.shadow {
   position: fixed;
+  /* position: fixed;
   top: 70%; 
   left: 60%; 
-  transform: translate(-70%, -70%);
-  width: 700px;
-  height: 500px; 
+ 
+  transform: translate(-70%, -70%); */
+  width: 600px;
+  height: 400px; 
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
-  border-radius: 10px;
-} */
+  border-radius: 16px;
+  z-index: -1;
+  /* filter: blur(10px); */
+}
 
 .top-image{
-  padding-top: 50px;
+ 
+  flex-direction: row;
+
 }
 .login-box {
   text-align: center;
@@ -232,25 +260,28 @@ code {
 }
 .form-group input{
   border-radius: 20px; 
-  border: 1px solid #ccc;
+  border:1px solid #ccc;
   padding: 8px;
   width: 150%;
   box-sizing: border-box;
-  background-color: gray;
+  background-color: rgb(158, 152, 152);
+  
   color: black;
 }
 
 .remember-me {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content: flex-start;
   margin-top: 10px;
+  margin-right: 10px;
   
 }
 
 .remember-me input {
-  margin-right: 5px;
+  margin-right: 8px;
   border: 5px solid black;
+  padding-left: 20%;
 }
 .submit-button {
   margin-top: 10px; 
@@ -268,8 +299,7 @@ code {
 
 .left-image-container {
   background-color: yellow;
-  border-radius: 70% 50% 70% 50% / 70% 50% 70% 50%;
-
+  border-radius: 50% 20% 60% 40% / 60% 50% 30% 70%;
   display: inline-block; 
   padding: 30px;
 }
@@ -305,4 +335,23 @@ code {
 
 .bubble p {
   margin: 0; /* Remove default margin */
+}
+
+.potato {
+  width: 150px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  background-color: #fbd200; /* Yellow color */
+  border-radius: 50% 50% 50% 50% / 70% 70% 30% 30%; /* Custom potato shape */
+  position: relative;
+}
+
+.potato::before {
+  content: '';
+  position: absolute;
+  top: 10%; /* Adjust position as needed */
+  left: 10%; /* Adjust position as needed */
+  width: 80%; /* Adjust width as needed */
+  height: 80%; /* Adjust height as needed */
+  background-color: #fbd200; /* Yellow color */
+  border-radius: 50%;
 }

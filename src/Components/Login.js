@@ -1,41 +1,36 @@
 import React from "react";
-import Box from "../assests/Box.png"
+import Box from "../assests/Box.png";
+import Ellipse33 from "../assests/Ellipse 33.png";
 import { useNavigate } from "react-router-dom";
-import Ellipse33 from "../assests/Ellipse 33.png"
-
+import LoginBox from "./loginComponent";
 
 const Login = () => {
-    const navigate= useNavigate()
-    const handleClick=()=>{
-        navigate("/dashboard")
-    }
+    const navigate = useNavigate();
+
+    const handleClick = (e) => {
+        e.preventDefault(); // Prevent default form submission behavior
+        navigate("/dashboard");
+    };
+
     return (
-        <div className="login-container">
-            <div className="shadow"></div>
-            <div className="left-image-container">
-            <img src={Ellipse33} alt="Image" className="left-image" />
-            </div>
- 
-             <div className="login-box-large">
-                <img src={Box} alt="Image" className="top-image" />
-                <h3>Welcome back</h3>
-                <form >
-                    <div className="form-group">
-                        <input type="email" id="email" name="email" placeholder="Enter email" />
-                    </div>
-                    <div className="form-group">
-                        <input type="password" id="password" name="password" placeholder="Password" />
-                    </div>
-                    <div className="remember-me">
-                        <input type="checkbox" id="rememberMe" name="rememberMe" />
-                        <label htmlFor="rememberMe">Remember me</label>
-                    </div>
-                    <div className="submit-button">
-                        <button type="submit" onClick={handleClick}>Login</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }} className="login-container444">
+      <div className="background-image"></div>
+      <div className="shadow"></div>
+      <div style={{display:'flex', flexDirection:'column', alignItems:'center', paddingBottom:'30px',
+       }} className="top-image-container">
+        <img src={Box} alt="Image" className="top-image" />
+      </div>
+
+ <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'center', alignContent:'center', alignSelf:'center' }}>
+    <div style={{justifyContent:'center', alignContent:'center'}} className="left-image-container">
+      <img src={Ellipse33} alt="Image" className="left-image" />
+    </div>
+  <div className="right-column" style={{ padding:'10px', display: 'flex', alignItems: 'center' }}>
+    <LoginBox handleClick={handleClick} />
+  </div>
+</div>
+
+    </div>
     );
 };
 
