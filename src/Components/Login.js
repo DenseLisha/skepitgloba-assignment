@@ -8,24 +8,24 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleClick = (e) => {
-        e.preventDefault(); // Prevent default form submission behavior
+        e.preventDefault(); 
         navigate("/dashboard");
     };
 
     return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }} className="login-container444">
+    <div  className="login-container">
       <div className="background-image"></div>
       <div className="shadow"></div>
-      <div style={{display:'flex', flexDirection:'column', alignItems:'center', paddingBottom:'30px',
-       }} className="top-image-container">
+      <div  className="top-image-container">
         <img src={Box} alt="Image" className="top-image" />
       </div>
 
- <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'center', alignContent:'center', alignSelf:'center' }}>
-    <div style={{justifyContent:'center', alignContent:'center'}} className="left-image-container">
-      <img src={Ellipse33} alt="Image" className="left-image" />
-    </div>
-  <div className="right-column" style={{ padding:'10px', display: 'flex', alignItems: 'center' }}>
+ <div className="left-image-container1">
+ <div className="egg">
+    <img src={Ellipse33} alt="Image" className="left-image"  />
+  </div>
+  <div className="u-shape"></div>
+  <div className="right-column">
     <LoginBox handleClick={handleClick} />
   </div>
 </div>

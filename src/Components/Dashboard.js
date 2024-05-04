@@ -59,7 +59,8 @@ const Dashboard = () => {
         <div className="parent-container">
             <div className="bubble-container">
             <div className="bubble">
-            <p>Hello! What are you looking for?</p>
+            <p className="bold-text">Hello!</p>
+            <p> What are you looking for?😊</p>
             <div className="triangle"></div>
             </div>
 
