@@ -203,7 +203,7 @@ code {
 }
 .shadow {
   position: fixed;
-  width: 600px;
+  width: 500px;
   height: 400px; 
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
@@ -220,7 +220,10 @@ code {
   padding-bottom:50px;
 
 }
-
+.top-image{
+  height: 50px;
+  width: 50px;
+}
 .left-image-container1{
   display: flex;
   flex-direction: row;
@@ -229,6 +232,10 @@ code {
   align-self:center;
   position: relative;
   
+}
+.left-image{
+  width: 80px;
+  height: 80px;
 }
 
 .egg {
@@ -279,8 +286,8 @@ code {
 .form-group input{
   border-radius: 20px; 
   border:1px solid #ccc;
-  padding: 8px;
-  width: 150%;
+  padding: 5px;
+  width: 120%;
   box-sizing: border-box;
   background-color: rgb(158, 152, 152);
   
@@ -307,8 +314,8 @@ code {
 
 .submit-button button {
   border-radius: 20px; 
-  padding: 12px; 
-  width: 150%;
+  padding: 5px; 
+  width: 120%;
   box-sizing: border-box;
   background-color: black;
   color: white; 
