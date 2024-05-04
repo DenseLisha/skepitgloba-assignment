@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/skepitgloba-assignment/static/css/main.ebd482d0.css",
-    "main.js": "/skepitgloba-assignment/static/js/main.f46d4392.js",
+    "main.js": "/skepitgloba-assignment/static/js/main.e89f44c7.js",
     "static/js/453.599caf98.chunk.js": "/skepitgloba-assignment/static/js/453.599caf98.chunk.js",
     "static/media/Wallpaper.png": "/skepitgloba-assignment/static/media/Wallpaper.2c7497dc4633c140e4f1.png",
     "static/media/Ellipse 33.png": "/skepitgloba-assignment/static/media/Ellipse 33.9e07f9096a8827032f5a.png",
     "index.html": "/skepitgloba-assignment/index.html",
     "main.ebd482d0.css.map": "/skepitgloba-assignment/static/css/main.ebd482d0.css.map",
-    "main.f46d4392.js.map": "/skepitgloba-assignment/static/js/main.f46d4392.js.map",
+    "main.e89f44c7.js.map": "/skepitgloba-assignment/static/js/main.e89f44c7.js.map",
     "453.599caf98.chunk.js.map": "/skepitgloba-assignment/static/js/453.599caf98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebd482d0.css",
-    "static/js/main.f46d4392.js"
+    "static/js/main.e89f44c7.js"
   ]
 }
